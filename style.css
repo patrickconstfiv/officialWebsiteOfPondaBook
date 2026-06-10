@@ -213,14 +213,14 @@ body.is-scrolled .topbar {
 .cta-brand h2 {
   margin: 0;
   font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
-  line-height: 0.96;
+  line-height: 1.08;
   letter-spacing: -0.03em;
 }
 
 .hero-copy h1 {
   max-width: none;
   font-size: clamp(2.8rem, 6vw, 5rem);
-  line-height: 0.92;
+  line-height: 1.02;
 }
 
 .hero-copy h1 span {
@@ -244,6 +244,10 @@ body.is-scrolled .topbar {
   font-size: 1rem;
 }
 
+.hero-actions {
+  margin-top: 30px;
+}
+
 .eyebrow {
   margin: 0 0 18px;
   color: var(--forest);
@@ -257,14 +261,13 @@ body.is-scrolled .topbar {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 14px;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .mini-card,
 .signal-card,
 .story-panel,
 .use-cases-grid article,
-.gallery-card,
 .cta-card {
   border: 1px solid rgba(255, 255, 255, 0.6);
   background: var(--paper);
@@ -277,15 +280,13 @@ body.is-scrolled .topbar {
   backdrop-filter: blur(14px);
 }
 
-.mini-card strong,
-.gallery-card strong {
+.mini-card strong {
   display: block;
   margin-bottom: 8px;
   font-size: 1rem;
 }
 
-.mini-card span,
-.gallery-card span {
+.mini-card span {
   color: var(--muted);
   font-size: 0.94rem;
 }
@@ -418,8 +419,7 @@ body.is-scrolled .topbar {
 
 .signal-card h3,
 .story-panel h3,
-.use-cases-grid h3,
-.gallery-card figcaption strong {
+.use-cases-grid h3 {
   margin: 14px 0 10px;
   font-size: 1.24rem;
   line-height: 1.12;
@@ -547,41 +547,6 @@ body.is-scrolled .topbar {
 .use-cases-grid article {
   padding: 26px;
   border-radius: var(--radius-lg);
-}
-
-.gallery {
-  padding: 14px 0 110px;
-}
-
-.gallery-track {
-  display: grid;
-  grid-template-columns: repeat(5, minmax(240px, 1fr));
-  gap: 20px;
-  margin-top: 40px;
-  align-items: start;
-}
-
-.gallery-card {
-  position: relative;
-  border-radius: 28px;
-  overflow: hidden;
-  transform-style: preserve-3d;
-  transition: transform 0.22s ease;
-}
-
-.gallery-card:nth-child(odd) {
-  margin-top: 26px;
-}
-
-.gallery-card img {
-  width: 100%;
-  aspect-ratio: 9 / 18.5;
-  object-fit: cover;
-  background: #dde2d8;
-}
-
-.gallery-card figcaption {
-  padding: 18px 18px 22px;
 }
 
 .cta {
@@ -714,10 +679,6 @@ body.is-scrolled .topbar {
   .use-cases-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-
-  .gallery-track {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
 }
 
 @media (max-width: 760px) {
@@ -758,8 +719,7 @@ body.is-scrolled .topbar {
 
   .hero-points,
   .signal-grid,
-  .use-cases-grid,
-  .gallery-track {
+  .use-cases-grid {
     grid-template-columns: 1fr;
   }
 
@@ -798,10 +758,6 @@ body.is-scrolled .topbar {
 
   .story-panel {
     padding: 22px;
-  }
-
-  .gallery-card:nth-child(odd) {
-    margin-top: 0;
   }
 
   .cta-card {
