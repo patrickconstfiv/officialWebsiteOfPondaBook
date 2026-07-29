@@ -152,6 +152,40 @@ body.is-scrolled .topbar {
   flex-wrap: wrap;
 }
 
+.language-switch,
+.footer-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+.language-switch {
+  padding: 8px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.26);
+}
+
+.language-switch a,
+.footer-links a {
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 4px;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+
+.language-switch a:hover,
+.language-switch a:focus-visible,
+.language-switch a[aria-current="page"],
+.footer-links a:hover,
+.footer-links a:focus-visible {
+  color: var(--forest);
+  text-decoration-color: currentColor;
+}
+
 .button {
   display: inline-flex;
   align-items: center;
@@ -417,8 +451,11 @@ body.is-scrolled .topbar {
   letter-spacing: 0.18em;
 }
 
+.signal-card h2,
 .signal-card h3,
+.story-panel h2,
 .story-panel h3,
+.use-cases-grid h2,
 .use-cases-grid h3 {
   margin: 14px 0 10px;
   font-size: 1.24rem;
@@ -618,6 +655,51 @@ body.is-scrolled .topbar {
   font-size: 0.94rem;
 }
 
+.footer-links {
+  margin-bottom: 12px;
+}
+
+.legal-page {
+  max-width: 860px;
+  padding: 52px 0 90px;
+}
+
+.legal-card {
+  padding: 34px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  border-radius: var(--radius-xl);
+  background: var(--paper);
+  box-shadow: var(--shadow-soft);
+}
+
+.legal-card h1,
+.legal-card h2 {
+  margin: 0;
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  line-height: 1.08;
+  letter-spacing: -0.03em;
+}
+
+.legal-card h1 {
+  font-size: clamp(2.4rem, 5vw, 4.4rem);
+}
+
+.legal-card h2 {
+  margin-top: 30px;
+  font-size: 1.5rem;
+}
+
+.legal-card p,
+.legal-card li {
+  color: var(--muted);
+}
+
+.legal-card a {
+  color: var(--forest);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
 .js [data-reveal] {
   opacity: 0;
   transform: translateY(26px);
@@ -702,6 +784,11 @@ body.is-scrolled .topbar {
   .topbar-actions {
     width: 100%;
     justify-content: stretch;
+  }
+
+  .language-switch {
+    width: 100%;
+    justify-content: center;
   }
 
   .topbar-actions .button {

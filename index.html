@@ -3,9 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="PondaBook is a premium project-style ledger for renovation budgets, weddings, moving costs, and every spending plan that keeps evolving.">
+  <meta name="description" content="Track renovation expenses, manage renovation budgets, and stay in control of home remodeling costs with PondaBook.">
+  <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#203125">
-  <title>PondaBook | Every project. Under control.</title>
+  <link rel="canonical" href="https://patrickconstfiv.github.io/officialWebsiteOfPondaBook/">
+  <link rel="alternate" hreflang="en" href="https://patrickconstfiv.github.io/officialWebsiteOfPondaBook/">
+  <link rel="alternate" hreflang="de" href="https://patrickconstfiv.github.io/officialWebsiteOfPondaBook/de/">
+  <link rel="alternate" hreflang="zh-CN" href="https://patrickconstfiv.github.io/officialWebsiteOfPondaBook/zh-cn/">
+  <link rel="alternate" hreflang="x-default" href="https://patrickconstfiv.github.io/officialWebsiteOfPondaBook/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="PondaBook - Renovation Budget & Expense Tracker">
+  <meta property="og:description" content="Track renovation expenses, manage renovation budgets, and stay in control of home remodeling costs with PondaBook.">
+  <meta property="og:image" content="https://patrickconstfiv.github.io/officialWebsiteOfPondaBook/imgs/posters/hero-poster.jpg">
+  <meta property="og:url" content="https://patrickconstfiv.github.io/officialWebsiteOfPondaBook/">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PondaBook - Renovation Budget & Expense Tracker">
+  <meta name="twitter:description" content="Track renovation expenses, manage renovation budgets, and stay in control of home remodeling costs with PondaBook.">
+  <meta name="twitter:image" content="https://patrickconstfiv.github.io/officialWebsiteOfPondaBook/imgs/posters/hero-poster.jpg">
+  <title>PondaBook - Renovation Budget & Expense Tracker</title>
   <link rel="icon" type="image/png" href="imgs/logo.png">
   <link rel="preload" as="image" href="imgs/posters/hero-poster.jpg">
   <script>
@@ -13,6 +28,22 @@
     document.documentElement.classList.add("js");
   </script>
   <link rel="stylesheet" href="style.css">
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "PondaBook",
+      "applicationCategory": "FinanceApplication",
+      "operatingSystem": "iOS",
+      "description": "PondaBook helps homeowners track renovation expenses, manage renovation budgets, organize project spending, and stay in control of home remodeling costs.",
+      "url": "https://patrickconstfiv.github.io/officialWebsiteOfPondaBook/",
+      "image": "https://patrickconstfiv.github.io/officialWebsiteOfPondaBook/imgs/posters/hero-poster.jpg",
+      "downloadUrl": "https://apps.apple.com/us/app/pondabook-renovation-budget/id6755175201",
+      "sameAs": [
+        "https://apps.apple.com/us/app/pondabook-renovation-budget/id6755175201"
+      ]
+    }
+  </script>
 </head>
 <body>
   <div class="progress-bar" aria-hidden="true"></div>
@@ -23,13 +54,19 @@
       <span>PondaBook</span>
     </a>
 
-    <nav class="nav">
+    <nav class="nav" aria-label="Main navigation">
       <a href="#features">Features</a>
-      <a href="#contact">Contact</a>
+      <a href="#renovation-budget">Budgeting</a>
+      <a href="privacy/index.html">Privacy</a>
+      <a href="support/index.html">Support</a>
     </nav>
 
     <div class="topbar-actions">
-      <a class="button button-ghost" href="mailto:patrickconstfiv@gmail.com">Email</a>
+      <div class="language-switch" aria-label="Language options">
+        <a href="index.html" lang="en" aria-current="page">English</a>
+        <a href="de/index.html" lang="de">Deutsch</a>
+        <a href="zh-cn/index.html" lang="zh-CN">简体中文</a>
+      </div>
       <a class="button button-solid" href="https://apps.apple.com/us/app/pondabook-renovation-budget/id6755175201" target="_blank" rel="noreferrer">View on App Store</a>
     </div>
   </header>
@@ -37,17 +74,14 @@
   <main id="top">
     <section class="hero section">
       <div class="hero-copy" data-reveal>
-        <p class="eyebrow">Project-style budgeting for real life</p>
+        <p class="eyebrow">Renovation budgeting for real life</p>
         <h1>
-          <span>Every purchase,</span>
-          <span>return, refund,</span>
-          <span>and change in</span>
-          <span>one evolving</span>
-          <span>ledger.</span>
+          <span>PondaBook</span>
+          <span>Renovation</span>
+          <span>Budget Tracker</span>
         </h1>
         <p class="hero-text">
-          PondaBook is built for renovation budgets, weddings, moves, travel plans, and the kinds of projects
-          that never stay still. Instead of scattered notes and broken timelines, everything lives in one clear story.
+          PondaBook helps homeowners track renovation expenses, manage a home renovation budget, and understand remodeling costs as a project changes. Keep purchases, returns, refunds, labor costs, materials, and late additions in one organized renovation expense tracker.
         </p>
 
         <div class="hero-actions">
@@ -57,56 +91,56 @@
 
         <div class="hero-points">
           <div class="mini-card">
-            <strong>Multi-entry ledger</strong>
-            <span>Track additions, refunds, replacements, and changes as one project.</span>
+            <strong>Renovation expense tracker</strong>
+            <span>Record materials, labor, replacements, refunds, and project changes together.</span>
           </div>
           <div class="mini-card">
-            <strong>Full change history</strong>
-            <span>Review every adjustment with a timeline you can trust.</span>
+            <strong>Budget control</strong>
+            <span>Compare actual renovation costs with your maximum budget before spending gets out of hand.</span>
           </div>
           <div class="mini-card">
             <strong>Export anytime</strong>
-            <span>Share in PDF, Excel, and other formats when the work is done.</span>
+            <span>Share a clean renovation cost record in PDF, Excel, and other practical formats.</span>
           </div>
         </div>
       </div>
 
       <div class="hero-stage" data-reveal>
         <div class="hero-stage-frame">
-          <img src="imgs/posters/hero-poster.jpg" alt="PondaBook promotional poster">
+          <img src="imgs/posters/hero-poster.jpg" alt="PondaBook renovation budget tracker poster">
         </div>
         <div class="floating-note floating-note-a">
-          <span class="note-label">For renovation, weddings, moving, travel</span>
-          <strong>One app for plans that keep changing.</strong>
+          <span class="note-label">For home remodeling</span>
+          <strong>Plan the budget, then keep tracking when real costs change.</strong>
         </div>
         <div class="floating-note floating-note-b">
-          <span class="note-label">Clear and organized</span>
-          <strong>No scattered entries. No messy follow-up.</strong>
+          <span class="note-label">Clear cost history</span>
+          <strong>No scattered receipts. No messy renovation spreadsheet cleanup.</strong>
         </div>
       </div>
     </section>
 
-    <section class="signal-band section" data-reveal>
+    <section class="signal-band section" id="renovation-budget" data-reveal>
       <div class="signal-copy">
-        <p class="eyebrow">Why it feels different</p>
-        <h2>Most apps record a payment. PondaBook records the whole project.</h2>
+        <p class="eyebrow">Why it helps</p>
+        <h2>Renovation costs rarely arrive in one simple payment.</h2>
       </div>
 
       <div class="signal-grid">
         <article class="signal-card">
           <span>01</span>
-          <h3>Designed for shifting budgets</h3>
-          <p>Keep the original plan, later additions, and every correction inside one ledger instead of splitting them into unrelated entries.</p>
+          <h2>Track renovation expenses</h2>
+          <p>Use PondaBook as a renovation cost tracker for materials, contractor payments, furniture, repairs, delivery fees, temporary purchases, returns, and refunds.</p>
         </article>
         <article class="signal-card">
           <span>02</span>
-          <h3>Built for major life events</h3>
-          <p>From a kitchen remodel to a baby checklist, PondaBook keeps high-attention projects calm, visible, and easy to review.</p>
+          <h2>Manage the renovation budget</h2>
+          <p>Set a home renovation budget, watch actual spending grow over time, and see how each new item affects your remodeling budget before you overspend.</p>
         </article>
         <article class="signal-card">
           <span>03</span>
-          <h3>Made to share and close out</h3>
-          <p>Export cleanly for family, clients, partners, or your own records when you need a trustworthy snapshot.</p>
+          <h2>Organize the whole project</h2>
+          <p>Keep every budget update, expense note, and change history connected to the same renovation project instead of splitting the story across apps and spreadsheets.</p>
         </article>
       </div>
     </section>
@@ -114,10 +148,9 @@
     <section class="story section" id="features">
       <div class="section-heading" data-reveal>
         <p class="eyebrow">Feature walkthrough</p>
-        <h2>Built for spending that changes shape over time.</h2>
+        <h2>Built for renovation planning that changes shape over time.</h2>
         <p>
-          Scroll through the flow PondaBook is built around: one project, many updates, a reliable history,
-          and a calmer way to stay on top of important plans.
+          PondaBook is designed around one project, many updates, a reliable history, and a calmer way to stay on top of renovation expenses and remodeling costs.
         </p>
       </div>
 
@@ -125,16 +158,16 @@
         <div class="story-visual">
           <div class="device-stack" data-reveal>
             <figure class="device-screen is-active" data-screen="ledger">
-              <img src="imgs/posters/screen-1.png" alt="PondaBook project ledger screen">
+              <img src="imgs/posters/screen-1.png" alt="PondaBook renovation expense ledger screen">
             </figure>
             <figure class="device-screen" data-screen="details">
-              <img src="imgs/posters/screen-2.png" alt="PondaBook project details screen">
+              <img src="imgs/posters/screen-2.png" alt="PondaBook renovation project details screen">
             </figure>
             <figure class="device-screen" data-screen="history">
-              <img src="imgs/posters/screen-3.png" alt="PondaBook project history screen">
+              <img src="imgs/posters/screen-3.png" alt="PondaBook renovation cost history screen">
             </figure>
             <figure class="device-screen" data-screen="export">
-              <img src="imgs/posters/screen-5.png" alt="PondaBook export screen">
+              <img src="imgs/posters/screen-5.png" alt="PondaBook renovation budget export screen">
             </figure>
             <figure class="device-screen" data-screen="themes">
               <img src="imgs/posters/screen-4.png" alt="PondaBook theme selection screen">
@@ -145,27 +178,25 @@
         <div class="story-copy">
           <article class="story-panel is-active" data-story="ledger" data-reveal>
             <span class="story-index">01</span>
-            <h3>One event, many entries, one clear total.</h3>
+            <h2>One renovation, many expenses, one clear total.</h2>
             <p>
-              A renovation or wedding rarely fits into a single payment. PondaBook keeps all related spending,
-              additions, and corrections grouped inside the same project.
+              A remodel rarely fits into a single receipt. PondaBook keeps related renovation spending, additions, corrections, and refunds grouped inside the same project.
             </p>
             <ul>
               <li>Track purchases, returns, refunds, and extra items together.</li>
-              <li>See current spending beside your maximum budget.</li>
-              <li>Stay focused on the project, not the spreadsheet cleanup.</li>
+              <li>See current renovation costs beside your maximum budget.</li>
+              <li>Stay focused on the project, not spreadsheet cleanup.</li>
             </ul>
           </article>
 
           <article class="story-panel" data-story="details" data-reveal>
             <span class="story-index">02</span>
-            <h3>Add changes anytime without breaking the flow.</h3>
+            <h2>Add budget changes anytime without breaking the flow.</h2>
             <p>
-              Last-minute materials, temporary purchases, and surprise adjustments are normal. The app is designed
-              so they still feel organized when they happen.
+              Last-minute materials, contractor adjustments, and surprise fixes are normal during home remodeling. The app keeps them organized when they happen.
             </p>
             <ul>
-              <li>Update the same project as real life moves.</li>
+              <li>Update the same renovation project as real life moves.</li>
               <li>Keep each category visible and easy to scan.</li>
               <li>Reduce friction when plans change midstream.</li>
             </ul>
@@ -173,10 +204,9 @@
 
           <article class="story-panel" data-story="history" data-reveal>
             <span class="story-index">03</span>
-            <h3>See a full change history you can trust.</h3>
+            <h2>See a full renovation cost history you can trust.</h2>
             <p>
-              Every modification stays on record, which makes the final number easier to understand and easier to explain
-              to the people involved.
+              Every modification stays on record, which makes the final renovation cost easier to understand and easier to explain to family, partners, or clients.
             </p>
             <ul>
               <li>Review how the project evolved over time.</li>
@@ -187,29 +217,27 @@
 
           <article class="story-panel" data-story="export" data-reveal>
             <span class="story-index">04</span>
-            <h3>Export the project when you need to share or archive it.</h3>
+            <h2>Export the project when you need to share or archive it.</h2>
             <p>
-              When the project is done, or when someone else needs a snapshot, PondaBook makes it easy
-              to send the work outward in practical formats.
+              When the renovation is done, or when someone else needs a snapshot, PondaBook makes it easy to send the cost record outward in practical formats.
             </p>
             <ul>
               <li>Prepare records for reconciliation and review.</li>
               <li>Use PDF, Excel, and other export formats.</li>
-              <li>Keep your finished projects tidy and portable.</li>
+              <li>Keep finished renovation budgets tidy and portable.</li>
             </ul>
           </article>
 
           <article class="story-panel" data-story="themes" data-reveal>
             <span class="story-index">05</span>
-            <h3>Switch the mood with minimalist themes.</h3>
+            <h2>Keep renovation planning calm and readable.</h2>
             <p>
-              Different projects can carry different energy. PondaBook includes multiple clean themes so each ledger
-              can feel calm, personal, and visually distinct.
+              Multiple clean themes make each project ledger feel calm, personal, and visually distinct without making cost tracking noisy.
             </p>
             <ul>
               <li>Choose a style that fits the project atmosphere.</li>
-              <li>Keep the interface polished without getting noisy.</li>
-              <li>Make practical planning feel more considered.</li>
+              <li>Keep the interface polished and easy to review.</li>
+              <li>Make practical budgeting feel more considered.</li>
             </ul>
           </article>
         </div>
@@ -219,25 +247,25 @@
     <section class="use-cases section" data-reveal>
       <div class="use-cases-copy">
         <p class="eyebrow">Where it shines</p>
-        <h2>Perfect for the projects people care about most.</h2>
+        <h2>Useful for the renovation work people care about most.</h2>
       </div>
 
       <div class="use-cases-grid">
         <article>
-          <h3>Renovation budgets</h3>
-          <p>Track materials, labor, replacements, and surprise fixes without losing the original plan.</p>
+          <h2>Home renovation budget</h2>
+          <p>Plan a maximum budget and keep tracking expenses as materials, labor, furniture, and fixtures are purchased.</p>
         </article>
         <article>
-          <h3>Wedding planning</h3>
-          <p>Keep deposits, balance payments, refunds, and late additions tied to the same event.</p>
+          <h2>Remodeling budget</h2>
+          <p>Use one project ledger for kitchen remodeling, bathroom remodeling, apartment upgrades, or whole-home renovation planning.</p>
         </article>
         <article>
-          <h3>Moving and setup</h3>
-          <p>Furniture, transport, repairs, household essentials, and last-minute changes all stay connected.</p>
+          <h2>Renovation cost tracker</h2>
+          <p>Follow actual spending and avoid overspending by keeping every change connected to the original budget.</p>
         </article>
         <article>
-          <h3>Travel and family plans</h3>
-          <p>Use it anywhere spending comes in waves and the whole story matters more than a single receipt.</p>
+          <h2>Project expense record</h2>
+          <p>Export the budget and expense history when you need to share, review, reimburse, or archive the project.</p>
         </article>
       </div>
     </section>
@@ -248,7 +276,7 @@
           <img src="imgs/logo.png" alt="PondaBook logo">
           <div>
             <p class="eyebrow">Ready to try it?</p>
-            <h2>Keep every project organized and under control.</h2>
+            <h2>Keep renovation expenses organized and under control.</h2>
           </div>
         </div>
 
@@ -269,6 +297,13 @@
   </a>
 
   <footer class="footer">
+    <div class="footer-links" aria-label="Site links">
+      <a href="index.html">English</a>
+      <a href="de/index.html">Deutsch</a>
+      <a href="zh-cn/index.html">简体中文</a>
+      <a href="privacy/index.html">Privacy Policy</a>
+      <a href="support/index.html">Support</a>
+    </div>
     <p>&copy; <span id="year"></span> PondaBook. Built as a static site for GitHub hosting.</p>
   </footer>
 
